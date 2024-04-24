@@ -11,7 +11,6 @@ void MyList::push_back(int data)
 		m_head = node; 
 		return;
 	}
-
 	// в цикле ищем последний элемент списка (in a loop we look for the last element of the list)
 	Node* last = m_head;
 	while (last->m_next != nullptr)
@@ -170,7 +169,6 @@ void MyList::deleteNodePos(int position)
 		delete currentNode;
 		return;
 	}
-
 	//счетчик позиции
 	int currentPosition = 0;
 	while (currentNode != nullptr && currentPosition <= position)
@@ -185,7 +183,6 @@ void MyList::deleteNodePos(int position)
 		previousNode = currentNode;
 		currentNode = currentNode->m_next;
 	}
-
 }
 
 void MyList::clear()
@@ -198,5 +195,4 @@ void MyList::clear()
 		std::cout << " delete node with data: " << currentNode->m_data << std::endl;
 		delete currentNode;
 	}
-
 }

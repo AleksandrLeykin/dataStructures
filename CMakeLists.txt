@@ -8,7 +8,9 @@ add_executable(${PROJECT_NAME}
 		src/main.cpp 
         src/Node.h
         src/myList.cpp 
-        src/myList.h)
+        src/myList.h 
+        src/Stack.cpp 
+        src/Stack.h)
 
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
 

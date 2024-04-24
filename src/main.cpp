@@ -1,10 +1,12 @@
 #include <iostream>
 #include "myList.h"
+#include "Stack.h"
 
 int main()
-{
-	
-	MyList testList;
+{	
+	//MyList
+
+	/*MyList testList;
 	for (int  i = 0; i < 10; ++i)
 	{
 		testList.push_back(i);
@@ -39,8 +41,25 @@ int main()
 
 	testList.deleteNodePos(2);
 	testList.show();
-	std::cout << std::endl;
+	std::cout << std::endl;*/
 	
+
+	//Stack
+	Stack m_stack;
+	m_stack.push(5);
+	std::cout << m_stack.peek() << std::endl;
+
+	m_stack.push(7);
+	m_stack.push(12);
+	m_stack.push(3);
+
+	m_stack.show();
+	std::cout << std::endl;
+
+	std::cout << m_stack.pop() << std::endl;
+
+	m_stack.show();
+	std::cout << std::endl;
 	return 0;
 }
 
